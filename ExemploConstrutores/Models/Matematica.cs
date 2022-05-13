@@ -10,12 +10,12 @@ namespace ExemploConstrutores.Models
             X = x;
             Y = y;
 
-            Calculadora.EventoCalculadora += EventHandler; //Inscrição do método "EventHandler" no evento "EventoCalculadora"
+            //Calculadora.EventoCalculadora += EventHandler; //Inscrição do método "EventHandler" no evento "EventoCalculadora"
         }                                                  //Sempre que o método "Somar" de "Matematica" for chamado,
                                                            //ele chama o método "Somar" de "Calculadora"
-        public void Somar()
+        public void Somar() //Este método chama o método "Somar" de "Calculadora"
         {
-            Calculadora.Somar(X,Y); //Este método chama o método "Somar" de "Calculadora"
+            Calculadora.Somar(X,Y); 
         }
 
         public void EventHandler()

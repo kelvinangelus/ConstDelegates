@@ -59,7 +59,10 @@ namespace ExemploConstrutores
             op(10,10);
             */
 
-            
+            Matematica m = new Matematica(10, 20); //Na chamada do construtor de "Matematica" é feita a inscrição
+                                                   //do método "eventHandler"
+            m.Somar();                             //Chamada do método "Somar" de "Matematica" que por sua 
+                                                   //vez chamada o método "Somar" de "Calculadora"                                         
         }
     }
 }
